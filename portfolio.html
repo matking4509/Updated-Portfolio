@@ -4,70 +4,113 @@
 <head>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <meta charset="UTF-8">
     <title>My First Page</title>
 </head>
 
 <body> 
 <header>
-        <div class="innerBanner">
-            <div class="nameBox">Mat King</div>
-            <nav class="menuBox">
-                <ul id="menu">
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-
+        <div class="container mx-auto sticky-top m border-bottom border-dark">
+                <div class="row tealBackground">
+                  <div class="col align-self-start">
+                    <h1 class="text-white align-baseline">Mat King</h1>
+                  </div>
+                  <!-- <div class="col-md-1 col-lg-2"></div> -->
+                  <div class="col align-self-end">
+                  <nav class="navbar navbar-expand-sm justify-content-center">
+                    <!-- Links -->
+                    <div class="btn-toolbar ml-md-5 ml-lg-2 ml-xl-5" role="toolbar" aria-label="Toolbar with button groups">
+                      <div class="btn-group mlc mrc" role="group" aria-label="First group"> 
+                          <a class="btn btn-secondary" href="./index.html" role="button">About</a>
+                          <a class="btn btn-secondary" href="./portfolio.html" role="button">Portfolio</a>
+                          <a class="btn btn-secondary" href="mailto:mat@matking.info" role="button">Contact</a>
+                          <a class="btn btn-secondary" href="https://github.com/matking4509/" role="button">GitHub</a>
+                          <a class="btn btn-secondary" href="./assets/documents/web-20170829.pdf" role="button">Resume</a>
+                      </div>
+                    </div>
+                  </nav>
+                  </div>
+                </div>
+              </div>
 </header>
  
-<section class="mainContainer">
+<div class="container bg-light mt-3 pt-3 mb-3">
     <div class="portfolio">
-        <h2 class="greenText">Portfolio</h2>
+        <div class="row">
+            <div class="col-2 align-self-start justify-content-start">
+                <h2 class="greenText">Portfolio</h2>
+            </div>
+            <div class="col-8"></div>
+            <div class="col-2 align-self-end justify-content-end">
+                <!-- <h2><a href="" class="btn btn-secondary">GitHub</a></h2> -->
+            </div>
+        </div>
         <hr>
         <div id="porfolioContainer">
-            <div class="portfolioBox">
-                <img src="assets/images/animals-q-g-320-240-2.jpg" height="100%" width="100%">
-                <div class="portfolioLabel">
-                    <p>Gorilla</p>
+            <div class="card my-3">
+                <img class="card-img-top border border-secondary rounded" src="./assets/images/BMD.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Brighten My Day</h4>
+                    <p class="card-text"><b>Description:</b> A simple application to build a meme using related quotes and images.  This was our first Group Project.  <br><b>Technologies:</b> BootStrap, JavaScript, jQuery, AJAX, Firebase</p>
+                    <a href="https://matking4509.github.io/BrightenMyDay/" class="btn btn-secondary">Application</a>
+                    <a href="https://github.com/matking4509/BrightenMyDay" class="btn btn-secondary">GitHub Code</a>
                 </div>
             </div>
-            <div class="portfolioBox">
-                    <img src="assets/images/city-q-c-320-240-5.jpg" height="100%" width="100%">
-                    <div class="portfolioLabel">
-                        <p>City</p>
-                    </div>                  
+            <div class="card my-3">
+                <img class="card-img-top border border-secondary rounded" src="./assets/images/wordGuess.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Word Guess</h4>
+                    <p class="card-text"><b>Description:</b>A very simple client side game similar to hangman.<br><b>Technologies:</b> BootStrap, jQuery, JavaScript</p>
+                    <a href="https://matking4509.github.io/wordGuessGame" class="btn btn-secondary">Application</a>
+                    <a href="https://github.com/matking4509/wordGuessGame" class="btn btn-secondary">GitHub Code</a>
+                </div>
             </div>
-            <div class="portfolioBox">
-                    <img src="assets/images/food-q-g-320-240-6.jpg" height="100%" width="100%">
-                    <div class="portfolioLabel">
-                        <p>Food</p>
-                    </div>
+            <div class="card my-3">
+                <img class="card-img-top border border-secondary rounded" src="./assets/images/FearTrivia.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Fear Trivia</h4>
+                    <p class="card-text"><b>Description:</b>A very simple client side trivia game based on phobias.<br><b>Technologies:</b> BootStrap, jQuery, JavaScript</p>
+                    <a href="https://matking4509.github.io/TriviaGame" class="btn btn-secondary">Application</a>
+                    <a href="https://github.com/matking4509/TriviaGame" class="btn btn-secondary">GitHub Code</a>
+                </div>
             </div>
-            <div class="portfolioBox">
-                    <img src="assets/images/nightlife-q-c-320-240-2.jpg" height="100%" width="100%">
-                    <div class="portfolioLabel">
-                        <p>Disco</p>
-                    </div>
+            <div class="card my-3">
+                <img class="card-img-top border border-secondary rounded" src="./assets/images/crystalGame.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Crystal Game</h4>
+                    <p class="card-text"><b>Description:</b>A very simple "number building" game.<br><b>Technologies:</b> BootStrap, jQuery, JavaScript</p>
+                    <a href="https://matking4509.github.io/unit-4-game" class="btn btn-secondary">Application</a>
+                    <a href="https://github.com/matking4509/unit-4-game" class="btn btn-secondary">GitHub Code</a>
+                </div>
             </div>
-            <div class="portfolioBox">
-                    <img src="assets/images/nightlife-q-c-320-240-7.jpg" height="100%" width="100%">
-                    <div class="portfolioLabel">
-                        <p>Bar</p>
-                    </div>
+            <div class="card my-3">
+                <img class="card-img-top border border-secondary rounded" src="./assets/images/basic-portfolio.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Basic Portfolio</h4>
+                    <p class="card-text"><b>Description:</b>First Assignment.  Really just a reminder where I started.<br><b>Technologies:</b>HTML, CSS</p>
+                    <a href="https://matking4509.github.io/basic-portfolio" class="btn btn-secondary">Application</a>
+                    <a href="https://github.com/matking4509/basic-portfolio" class="btn btn-secondary">GitHub Code</a>
+                </div>
             </div>
         </div>
     </div> 
-</section>
+</div>
 
-<footer>
-    <div class="footerContainer">
-        <div id="footerText">
-            &copy; Copyright Mat King 2018
-        </div>
-    </div>
-</footer>
+<!-- Footer -->
+<div class="footerSpace"></div> <!--Div to keep Text from scrolling behind footer -->
+<div class="container sticky-bottom border-bottom border-dark">
+  <footer class="row bg-dark text-white">
+  <!-- Copyright -->
+  <div class="col-12 footerBorder">
+  <div class="footer-copyright text-center py-3">© 2018 Copyright: Mat King</div>
+  </div>  
+  <!-- Copyright -->
+  </footer>
+</div>
 
 </body>
 </html>

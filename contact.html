@@ -4,25 +4,39 @@
 <head>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <meta charset="UTF-8">
     <title>My First Page</title>
 </head>
 
 <body> 
 <header>
-        <div class="innerBanner">
-            <div class="nameBox">Mat King</div>
-            <nav class="menuBox">
-                <ul id="menu">
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+<div class="container mx-auto sticky-top m border-bottom border-dark">
+    <div class="row tealBackground">
+        <div class="col-xs-12 col-md-4 col-lg-4 align-self-start ">
+            <h1 class="text-white align-baseline text-center">Mat King</h1>
+        </div>
+        <div class="col-md-3 col-lg-4"></div>
+        <div class="col-md-5 col-lg-4 align-self-end justify-content-right">
+            <nav class="navbar navbar-expand-sm justify-content-center">
+                <!-- Links -->
+                <div class="btn-toolbar ml-md-5 ml-lg-2 ml-xl-5" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group mlc mrc" role="group" aria-label="First group"> 
+                        <a class="btn btn-secondary" href="./index.html" role="button">About</a>
+                        <a class="btn btn-secondary" href="./portfolio.html" role="button">Portfolio</a>
+                        <a class="btn btn-secondary" href="./contact.html" role="button">Contact</a>
+                    </div>
+                </div>
             </nav>
         </div>
-
+    </div>
+    </div>
 </header>
  
-<section class="mainContainer">
+<div class="container bg-light mt-3 pt-3 mb-3">
     <div class="contact">
         <h2 class="greenText">Contact</h2>
         <hr>
@@ -36,15 +50,19 @@
             <input class="contactButton" type="submit" value="Submit">
         </form>
     </div> 
-</section>
+</div>>
 
-<footer>
-    <div class="footerContainer">
-        <div id="footerText">
-            &copy; Copyright Mat King 2018
-        </div>
-    </div>
-</footer>
+<!-- Footer -->
+<div class="footerSpace"></div> <!--Div to keep Text from scrolling behind footer -->
+<div class="container sticky-bottom border-bottom border-dark">
+  <footer class="row bg-dark text-white">
+  <!-- Copyright -->
+  <div class="col-12 footerBorder">
+  <div class="footer-copyright text-center py-3">© 2018 Copyright: Mat King</div>
+  </div>  
+  <!-- Copyright -->
+  </footer>
+</div>
 
 </body>
 </html>
